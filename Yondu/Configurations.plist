@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Local</key>
+	<dict>
+		<key>URLs</key>
+		<array>
+			<string>http://127.0.0.1/cmt-rss.xml</string>
+			<string>http://127.0.0.1/fiction-rss.xml</string>
+			<string>http://127.0.0.1/horror-rss.xml</string>
+			<string>http://127.0.0.1/action-rss.xml</string>
+			<string>http://127.0.0.1/mystery-rss.xml</string>
+			<string>http://127.0.0.1/psych-rss.xml</string>
+		</array>
+		<key>Logging</key>
+		<true/>
+	</dict>
+	<key>Staging</key>
+	<dict>
+		<key>URLs</key>
+		<array>
+			<string>114.198.129.245/sandbox/anna/cmt-rss.xml</string>
+			<string>114.198.129.245/sandbox/anna/fiction-rss.xml</string>
+			<string>114.198.129.245/sandbox/anna/horror-rss.xml</string>
+			<string>114.198.129.245/sandbox/anna/action-rss.xml</string>
+			<string>114.198.129.245/sandbox/anna/mystery-rss.xml</string>
+			<string>114.198.129.245/sandbox/anna/pysch-rss.xml</string>
+		</array>
+		<key>Logging</key>
+		<true/>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>URLs</key>
+		<array>
+			<string>https://www.amazon.co.uk/gp/rss/bestsellers/books/72/ref=zg_bs_72_rsslink</string>
+			<string>https://www.amazon.co.uk/gp/rss/bestsellers/books/62/ref=zg_bs_62_rsslink</string>
+			<string>https://www.amazon.co.uk/gp/rss/bestsellers/books/63/ref=zg_bs_63_rsslink</string>
+			<string>https://www.amazon.co.uk/gp/rss/bestsellers/books/426317031/ref=zg_bs_426317031_rsslink</string>
+			<string>https://www.amazon.co.uk/gp/rss/bestsellers/books/270408/ref=zg_bs_270408_rsslink</string>
+			<string>https://www.amazon.co.uk/gp/rss/bestsellers/books/270423/ref=zg_bs_270423_rsslink</string>
+		</array>
+		<key>Logging</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

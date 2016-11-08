@@ -1,0 +1,15 @@
+PODS:
+  - FeedKit (5.0.0)
+  - Kanna (2.0.0)
+
+DEPENDENCIES:
+  - FeedKit (~> 5.0)
+  - Kanna (~> 2.0)
+
+SPEC CHECKSUMS:
+  FeedKit: f3edf3ba14a3aef57caceec91ef77745d10abbbe
+  Kanna: 9a6637f72f5c77fe9c045b1efb2a5bb074754af8
+
+PODFILE CHECKSUM: a1f472664364fc5d653f6df35ee371b6a15e6255
+
+COCOAPODS: 1.1.1

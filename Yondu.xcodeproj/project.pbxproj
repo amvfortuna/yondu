@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77C99251317028DBE0D392EC /* Pods_Yondu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF6C540465AA57275761F2 /* Pods_Yondu.framework */; };
+		B6DE58711DD05211001B17B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE58701DD05211001B17B8 /* AppDelegate.swift */; };
+		B6DE58761DD05211001B17B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DE58741DD05211001B17B8 /* Main.storyboard */; };
+		B6DE58781DD05211001B17B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DE58771DD05211001B17B8 /* Assets.xcassets */; };
+		B6DE587B1DD05211001B17B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DE58791DD05211001B17B8 /* LaunchScreen.storyboard */; };
+		B6DE58871DD05D93001B17B8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE58861DD05D93001B17B8 /* Config.swift */; };
+		B6DE58891DD05E17001B17B8 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6DE58881DD05E17001B17B8 /* Configurations.plist */; };
+		B6DE588B1DD064AA001B17B8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE588A1DD064AA001B17B8 /* SearchViewController.swift */; };
+		B6DE588D1DD07CCF001B17B8 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE588C1DD07CCF001B17B8 /* SearchResultCell.swift */; };
+		B6DE588F1DD08E5C001B17B8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE588E1DD08E5C001B17B8 /* Book.swift */; };
+		B6DE58931DD0B856001B17B8 /* RSSFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE58921DD0B856001B17B8 /* RSSFetcher.swift */; };
+		B6DE58951DD0E2DD001B17B8 /* RSSProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE58941DD0E2DD001B17B8 /* RSSProcessor.swift */; };
+		B6DE58971DD1DC93001B17B8 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE58961DD1DC93001B17B8 /* UIImageView+DownloadImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14C99CDD8DC2442D9778A5DD /* Pods-Yondu.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yondu.production.xcconfig"; path = "Pods/Target Support Files/Pods-Yondu/Pods-Yondu.production.xcconfig"; sourceTree = "<group>"; };
+		28226A0A7D1AB50DF7F14B79 /* Pods-Yondu.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yondu.local.xcconfig"; path = "Pods/Target Support Files/Pods-Yondu/Pods-Yondu.local.xcconfig"; sourceTree = "<group>"; };
+		91FF6C540465AA57275761F2 /* Pods_Yondu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yondu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D7A6CE8ED9F72C340DE195 /* Pods-Yondu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yondu.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Yondu/Pods-Yondu.staging.xcconfig"; sourceTree = "<group>"; };
+		B6DE586D1DD05211001B17B8 /* Yondu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yondu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6DE58701DD05211001B17B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6DE58751DD05211001B17B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6DE58771DD05211001B17B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6DE587A1DD05211001B17B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6DE587C1DD05211001B17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DE58861DD05D93001B17B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B6DE58881DD05E17001B17B8 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
+		B6DE588A1DD064AA001B17B8 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B6DE588C1DD07CCF001B17B8 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		B6DE588E1DD08E5C001B17B8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B6DE58921DD0B856001B17B8 /* RSSFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFetcher.swift; sourceTree = "<group>"; };
+		B6DE58941DD0E2DD001B17B8 /* RSSProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSProcessor.swift; sourceTree = "<group>"; };
+		B6DE58961DD1DC93001B17B8 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6DE586A1DD05211001B17B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C99251317028DBE0D392EC /* Pods_Yondu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209FDEC6BEA502579636BD2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91FF6C540465AA57275761F2 /* Pods_Yondu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6DE58641DD05211001B17B8 = {
+			isa = PBXGroup;
+			children = (
+				B6DE586F1DD05211001B17B8 /* Yondu */,
+				B6DE586E1DD05211001B17B8 /* Products */,
+				EC063DFA358FFF8601DD6313 /* Pods */,
+				209FDEC6BEA502579636BD2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6DE586E1DD05211001B17B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6DE586D1DD05211001B17B8 /* Yondu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6DE586F1DD05211001B17B8 /* Yondu */ = {
+			isa = PBXGroup;
+			children = (
+				B6DE58701DD05211001B17B8 /* AppDelegate.swift */,
+				B6DE58861DD05D93001B17B8 /* Config.swift */,
+				B6DE588A1DD064AA001B17B8 /* SearchViewController.swift */,
+				B6DE588C1DD07CCF001B17B8 /* SearchResultCell.swift */,
+				B6DE588E1DD08E5C001B17B8 /* Book.swift */,
+				B6DE58921DD0B856001B17B8 /* RSSFetcher.swift */,
+				B6DE58941DD0E2DD001B17B8 /* RSSProcessor.swift */,
+				B6DE58961DD1DC93001B17B8 /* UIImageView+DownloadImage.swift */,
+				B6DE58741DD05211001B17B8 /* Main.storyboard */,
+				B6DE58851DD0587C001B17B8 /* Supporting Files */,
+			);
+			path = Yondu;
+			sourceTree = "<group>";
+		};
+		B6DE58851DD0587C001B17B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6DE58771DD05211001B17B8 /* Assets.xcassets */,
+				B6DE58791DD05211001B17B8 /* LaunchScreen.storyboard */,
+				B6DE587C1DD05211001B17B8 /* Info.plist */,
+				B6DE58881DD05E17001B17B8 /* Configurations.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC063DFA358FFF8601DD6313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28226A0A7D1AB50DF7F14B79 /* Pods-Yondu.local.xcconfig */,
+				99D7A6CE8ED9F72C340DE195 /* Pods-Yondu.staging.xcconfig */,
+				14C99CDD8DC2442D9778A5DD /* Pods-Yondu.production.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6DE586C1DD05211001B17B8 /* Yondu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6DE587F1DD05211001B17B8 /* Build configuration list for PBXNativeTarget "Yondu" */;
+			buildPhases = (
+				AD0C5FA9DF8182F88813663F /* [CP] Check Pods Manifest.lock */,
+				B6DE58691DD05211001B17B8 /* Sources */,
+				B6DE586A1DD05211001B17B8 /* Frameworks */,
+				B6DE586B1DD05211001B17B8 /* Resources */,
+				C5B333B1CE68EE6C44A6E710 /* [CP] Embed Pods Frameworks */,
+				C9DAD082D64C5A35982D6EB4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yondu;
+			productName = Yondu;
+			productReference = B6DE586D1DD05211001B17B8 /* Yondu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6DE58651DD05211001B17B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = AVF;
+				TargetAttributes = {
+					B6DE586C1DD05211001B17B8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QX4UD7VY48;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B6DE58681DD05211001B17B8 /* Build configuration list for PBXProject "Yondu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6DE58641DD05211001B17B8;
+			productRefGroup = B6DE586E1DD05211001B17B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6DE586C1DD05211001B17B8 /* Yondu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6DE586B1DD05211001B17B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DE587B1DD05211001B17B8 /* LaunchScreen.storyboard in Resources */,
+				B6DE58891DD05E17001B17B8 /* Configurations.plist in Resources */,
+				B6DE58781DD05211001B17B8 /* Assets.xcassets in Resources */,
+				B6DE58761DD05211001B17B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD0C5FA9DF8182F88813663F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B333B1CE68EE6C44A6E710 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yondu/Pods-Yondu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9DAD082D64C5A35982D6EB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yondu/Pods-Yondu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6DE58691DD05211001B17B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DE588B1DD064AA001B17B8 /* SearchViewController.swift in Sources */,
+				B6DE58711DD05211001B17B8 /* AppDelegate.swift in Sources */,
+				B6DE588D1DD07CCF001B17B8 /* SearchResultCell.swift in Sources */,
+				B6DE58931DD0B856001B17B8 /* RSSFetcher.swift in Sources */,
+				B6DE58971DD1DC93001B17B8 /* UIImageView+DownloadImage.swift in Sources */,
+				B6DE588F1DD08E5C001B17B8 /* Book.swift in Sources */,
+				B6DE58871DD05D93001B17B8 /* Config.swift in Sources */,
+				B6DE58951DD0E2DD001B17B8 /* RSSProcessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6DE58741DD05211001B17B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6DE58751DD05211001B17B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6DE58791DD05211001B17B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6DE587A1DD05211001B17B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6DE587D1DD05211001B17B8 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Local;
+		};
+		B6DE587E1DD05211001B17B8 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		B6DE58801DD05211001B17B8 /* Local */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28226A0A7D1AB50DF7F14B79 /* Pods-Yondu.local.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QX4UD7VY48;
+				INFOPLIST_FILE = Yondu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AVF.Yondu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Local;
+		};
+		B6DE58811DD05211001B17B8 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C99CDD8DC2442D9778A5DD /* Pods-Yondu.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QX4UD7VY48;
+				INFOPLIST_FILE = Yondu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AVF.Yondu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Production;
+		};
+		B6DE58821DD05282001B17B8 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		B6DE58831DD05282001B17B8 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D7A6CE8ED9F72C340DE195 /* Pods-Yondu.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QX4UD7VY48;
+				INFOPLIST_FILE = Yondu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AVF.Yondu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Staging;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6DE58681DD05211001B17B8 /* Build configuration list for PBXProject "Yondu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6DE587D1DD05211001B17B8 /* Local */,
+				B6DE58821DD05282001B17B8 /* Staging */,
+				B6DE587E1DD05211001B17B8 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		B6DE587F1DD05211001B17B8 /* Build configuration list for PBXNativeTarget "Yondu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6DE58801DD05211001B17B8 /* Local */,
+				B6DE58831DD05282001B17B8 /* Staging */,
+				B6DE58811DD05211001B17B8 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6DE58651DD05211001B17B8 /* Project object */;
+}
