@@ -17,10 +17,10 @@ class SearchViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.rssProcessor.delegate = self
-        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.delegate = self
         self.searchController.dimsBackgroundDuringPresentation = false
         self.tableView.tableHeaderView = self.searchController.searchBar
-        self.searchController.searchBar.delegate = self
+        self.tableView.tableFooterView = UIView(frame: .zero)
     }
 }
 
@@ -72,13 +72,14 @@ extension SearchViewController: UISearchBarDelegate {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         self.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
         
-        RSSFetcher.beginFetch { [weak self] (rssFeed) in
-            guard let strongSelf = self else { return }
-            strongSelf.rssProcessor.rssFeed = rssFeed
-            
+        RSSFetcher.beginFetch { [weak self] (finished, rssFeed) in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            if let keyword = searchBar.text, keyword != "" {
-                strongSelf.rssProcessor.keyword = keyword
+            guard let strongSelf = self else { return }
+            if finished {
+                strongSelf.rssProcessor.rssFeed = rssFeed!
+                if let keyword = searchBar.text, keyword != "" {
+                    strongSelf.rssProcessor.keyword = keyword
+                }
             }
         }
         return true

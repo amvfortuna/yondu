@@ -20,12 +20,12 @@
 	<dict>
 		<key>URLs</key>
 		<array>
-			<string>114.198.129.245/sandbox/anna/cmt-rss.xml</string>
-			<string>114.198.129.245/sandbox/anna/fiction-rss.xml</string>
-			<string>114.198.129.245/sandbox/anna/horror-rss.xml</string>
-			<string>114.198.129.245/sandbox/anna/action-rss.xml</string>
-			<string>114.198.129.245/sandbox/anna/mystery-rss.xml</string>
-			<string>114.198.129.245/sandbox/anna/pysch-rss.xml</string>
+			<string>http://114.198.129.245/sandbox/anna/xml/cmt-rss.xml</string>
+			<string>http://114.198.129.245/sandbox/anna/xml/fiction-rss.xml</string>
+			<string>http://114.198.129.245/sandbox/anna/xml/horror-rss.xml</string>
+			<string>http://114.198.129.245/sandbox/anna/xml/action-rss.xml</string>
+			<string>http://114.198.129.245/sandbox/anna/xml/mystery-rss.xml</string>
+			<string>http://114.198.129.245/sandbox/anna/xml/psych-rss.xml</string>
 		</array>
 		<key>Logging</key>
 		<true/>

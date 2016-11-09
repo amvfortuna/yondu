@@ -84,7 +84,6 @@
 		B6DE586F1DD05211001B17B8 /* Yondu */ = {
 			isa = PBXGroup;
 			children = (
-				B6DE58701DD05211001B17B8 /* AppDelegate.swift */,
 				B6DE58861DD05D93001B17B8 /* Config.swift */,
 				B6DE588A1DD064AA001B17B8 /* SearchViewController.swift */,
 				B6DE588C1DD07CCF001B17B8 /* SearchResultCell.swift */,
@@ -101,6 +100,7 @@
 		B6DE58851DD0587C001B17B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6DE58701DD05211001B17B8 /* AppDelegate.swift */,
 				B6DE58771DD05211001B17B8 /* Assets.xcassets */,
 				B6DE58791DD05211001B17B8 /* LaunchScreen.storyboard */,
 				B6DE587C1DD05211001B17B8 /* Info.plist */,

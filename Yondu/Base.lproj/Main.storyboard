@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Amazon Books-->
+        <!--Amazon Bestsellers-->
         <scene sceneID="Bxw-CP-o0D">
             <objects>
                 <tableViewController id="8i3-cn-Na9" customClass="SearchViewController" customModule="Yondu" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,7 +131,7 @@
                             <outlet property="delegate" destination="8i3-cn-Na9" id="d12-Jm-tD9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Amazon Books" id="R2v-xt-dM8"/>
+                    <navigationItem key="navigationItem" title="Amazon Bestsellers" id="R2v-xt-dM8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXF-hP-ZUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
