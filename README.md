@@ -1,7 +1,3 @@
-# Yondu Technical Exam
-
-A technical exam from Yondu. 
-
 ## Instructions
 
 Build an app that contains a search box where a user can start typing a title of a book and the app will retrieve in real-time the RSS Feeds and perform the search for a book with a title that matches the query. We are assuming that the data in these feeds will change continuously so it's not possible to cache them.

@@ -64,35 +64,34 @@ class RSSProcessor: NSObject {
              Since we want to display books that have 4.5+ stars only, it's important
              that we check the ratings before we process the whole item.
              
-             If this book has at least 4.5 stars, we process it and add it directly 
+             If this book has at least 4.5 stars, we process it and add it directly
              to the filterFeed array. Else, we'll check if it has at least 4 stars, if it does
              we'll add it to the fourStarBooks array. If not, we'll disregard this and move on.
-            */
+             */
             if let ratingsImg = (html.at_xpath("//img[contains(@src,'.gif')]"))?["src"] {
                 if ratingsImg.range(of: "stars-4-5") != nil || ratingsImg.range(of: "stars-5-0") != nil {
-                    let bookCoverImg = (html.at_xpath("//img[1]"))?["src"]
-                    let category = html.at_xpath("//a[contains(text(), 'Bestsellers in')]")
-                    let book = self.createBook(item.title, item.pubDate, bookCoverImg, ratingsImg, category?.content)
+                    let book = self.createBook(from: item, withRatings: ratingsImg, andOtherInfo: html)
                     self.filteredFeed.append(book)
                 } else if ratingsImg.range(of: "stars-4-0") != nil && self.filteredFeed.count == 0 {
                     if self.fourStarBooks == nil {
                         self.fourStarBooks = [Book]()
                     }
-                    let bookCoverImg = (html.at_xpath("//img[1]"))?["src"]
-                    let category = html.at_xpath("//a[contains(text(), 'Bestsellers in')]")
-                    let book = self.createBook(item.title, item.pubDate, bookCoverImg, ratingsImg, category?.content)
+                    let book = self.createBook(from: item, withRatings: ratingsImg, andOtherInfo: html)
                     self.fourStarBooks?.append(book)
                 }
             }
         }
     }
     
-    fileprivate func createBook(_ title: String?, _ publicationDate: Date?, _ bookCover: String?, _ ratings: String?, _ category: String?) -> Book {
+    fileprivate func createBook(from feedItem: RSSFeedItem, withRatings ratings: String, andOtherInfo others: HTMLDocument) -> Book {
+        
+        let bookCoverImg = (others.at_xpath("//img[1]"))?["src"]
+        let category = others.at_xpath("//a[contains(text(), 'Bestsellers in')]")?.content
         
         let book = Book()
-        book.title = title?.trimmingCharacters(in: .whitespacesAndNewlines)
-        book.publicationDate = publicationDate
-        book.thumbnail = bookCover
+        book.title = feedItem.title?.trimmingCharacters(in: .whitespacesAndNewlines)
+        book.publicationDate = feedItem.pubDate
+        book.thumbnail = bookCoverImg
         book.ratings = ratings
         book.category = category
         return book
